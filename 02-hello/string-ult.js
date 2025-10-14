@@ -1,6 +1,6 @@
 //1. trim() dung de loai bo khoang trong ở đầu và cưới
 let str = " Javascript is awasome "
-console.log(str);
+console.log(str.trim());
 
 //2. toLowerCase() và toUpperCase() chuyen doi tat ca cac ky tu trong chuoi thanh Thuong/ Hoa
 console.log(str.toLowerCase());
