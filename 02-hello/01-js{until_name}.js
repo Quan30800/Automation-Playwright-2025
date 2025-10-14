@@ -66,3 +66,32 @@ studentScore.forEach(score => {
 });
 
 console.log(adjustedScores);
+
+// . Dùng map (cách chuẩn nhất để biến đổi mảng)
+const studentScore = [85, 90, 78];
+
+const adjustedScores = studentScore.map(score => {
+  if (score < 90) {
+    return score * 1.10;
+  } else {
+    return score * 0.95;
+  }
+});
+
+console.log(adjustedScores);
+👉 map luôn trả về mảng mới, không cần push.
+
+// 2. Dùng for + gán trực tiếp theo index
+
+const studentScore = [85, 90, 78];
+let adjustedScores = [];
+
+for (let i = 0; i < studentScore.length; i++) {
+  if (studentScore[i] < 90) {
+    adjustedScores[i] = studentScore[i] * 1.10;
+  } else {
+    adjustedScores[i] = studentScore[i] * 0.95;
+  }
+}
+
+console.log(adjustedScores);
