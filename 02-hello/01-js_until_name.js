@@ -126,17 +126,79 @@ console.log(SO); // [1, 2, 3, 4]
 
 //POP
 // pop sẽ loại bỏ phần tử cuối cùng và trả về phần tử đó
-const poppedElement = SO.pop();
-// console.log(poppedElement); // 4
+// const poppedElement = SO.pop();
+// // console.log(poppedElement); // 4
 
-console.log(SO); // [1, 2, 3]
+// console.log(SO); // [1, 2, 3]
 
-//
-const Name = [ "Alice", "Bob", "Charlie"]
-Name.push("David");
-console.log(Name); 
+// //
+// const Name = [ "Alice", "Bob", "Charlie"]
+// Name.push("David");
+// console.log(Name); 
 
 
-// REDUCE
-const studentScore = [85, 90,78]
-const score = studentScore.reduce( )
+// // REDUCE
+// const studentScore = [85, 90,78]
+// const score = studentScore.reduce((total, num) => total + num, 0 );
+// console.log(score) 
+// //
+// const studentMul = [1,2,3,4 ]
+// const scoreMul = studentMul.reduce((Mul, num) => Mul * num, 1 );
+// console.log(scoreMul) 
+// //
+// const expenses = [50, 100, 150]
+// const totalEx = expenses.reduce((total, num) => total + num, 0 );
+// console.log(totalEx) 
+
+
+
+// // SHIFT/UNSHIFT
+// const number = [1,2,3,4 ];
+// const Newnumber = number.shift();
+// console.log(Newnumber);
+// //
+// const numberMoi = number.unshift(1);
+// console.log(numberMoi);
+// //
+// const Name = ["Bob", "Charlie"]
+// Name.unshiftshift("Alice");
+// console.log(Name);
+
+
+
+//SOME
+// const studentScore = [ 85,90,78];
+// const newScore = studentScore.some(num => num > 80);
+// console.log(newScore);
+
+// const age = [18,21,16,25];
+// const newAge = age.some( num => num < 18);
+// console.log(newAge);
+
+// const words = [ "apple", "banana", "cherry", "date"];
+// const newWords = words.some( num => num.length > 5 );
+// console.log(newWords);
+
+//SPLIT
+const name = "Nguyễn Văn A";
+const splitName = name.split(" ");
+console.log(splitName); 
+
+const email = "example@gmail.com, example023gmail.com, example03@gmail.com";
+const Splitemail = email.split(", ");
+console.log(Splitemail);
+
+const date = "2024-05-19";
+const splitdate = date.split("-");
+console.log(splitdate);
+
+
+//INCLUDE
+const checkName = name.includes("Nguyễn");
+console.log(checkName);
+
+const email2 = "exemple3g,ail.com"
+const emalll = email2.includes("@");
+console.log(emalll);
+
+
